@@ -1,12 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>welcam to cesare's page</h1>
-</body>
+<html lang="it">
+    <testa>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Documento</title>
+        <stile>
+            corpo {
+                dimensione carattere: 30px;
+            }
+            h1 {
+                larghezza: 900px;
+                margine: 0 automatico;
+                sfondo: #bbbbbb;
+                text-align: centro;
+                margine inferiore: 30px;
+                dimensione carattere: 40px;
+            }
+            #griglia {
+                visualizzazione: griglia;
+                grid-template-colonne: ripeti(3, 1fr);
+                spazio: 40px;
+                luogo-item: centro;
+            }
+            .banco {
+                colore di sfondo: #124312;
+                text-align: centro;
+                imbottitura: 20px;
+            }
+            .banco > span {
+                margine: 20px;
+                colore di sfondo: #aa33aa;
+            }
+            #insegnante {
+                griglia-colonna: 1 / 4;
+                colore di sfondo: #aaabaa;
+                imbottitura: 30px;
+            }
+        </stile>
+    </head>
+    <corpo>
+        <h1>Disposizione dei banchi della classe 2L</h1>
+        <div id="griglia">
+            <div class="banco">
+                <span>studente_1</span>
+                <span>studente_2</span>
+            </div>
+            <div class="banco">
+                <span>studente_3</span>
+                <span>studente_4</span>
+            </div>
+            <div class="banco">
+                <span>studente_1</span>
+                <span>studente_2</span>
+            </div>
+            <div class="banco">
+                <span>studente_6</span>
+                <span>studente_5</span>
+            </div>
+            <div class="banco">
+                <span>studente_4</span>
+                <span>studente_3</span>
+            </div>
+            <div class="banco">
+                <span>studente_2</span>
+                <span>studente_1</span>
+            </div>
+            <div class="banco">
+                <span>studente_2</span>
+                <span>studente_1</span>
+            </div>
+            <div class="banco">
+                <span>studente_2</span>
+                <span>studente_1</span>
+            </div>
+            <div id="teacher">Insegnante</div>
+        </div>
+    </corpo>
 </html>
